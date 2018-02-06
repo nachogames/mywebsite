@@ -1,0 +1,17 @@
+body{
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+#About{
+    transform: rotate(90deg);
+}
