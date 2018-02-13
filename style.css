@@ -2,8 +2,25 @@
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
-    src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+    src: local('Bebas Neue Regular'), url('fonts/BebasNeue Regular.otf') format('otf');
 }
+
+@font-face{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Bebas Neue Bold'), url('fonts/BebasNeue Bold.otf') format('otf');
+}
+div, h1{
+    margin:0;
+    padding: 0;
+}
+p{
+    margin:0;
+    padding: 0;
+}
+
+
 body{
     /* background: #333; */
     color: #fff;
@@ -14,9 +31,10 @@ body{
 header{
     background-image: url('img/headshot2.png');
     background-size: cover;
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
-    
+    padding: 0;
+    margin: 0;
     height:100vh;
     /* display: flex;
     flex-direction: column;
@@ -27,6 +45,8 @@ header{
 }
 
 #about-me{
+    padding:0;
+    margin: 0;
     background: #ffa500;
 }
 
@@ -34,11 +54,14 @@ header{
     padding: 0;
     margin: 0;
     font-family: 'Bebas Neue';
-    font-size: 25em;
+    font-size: 30em;
     text-align: left;
-    opacity: 10%;
+    color: rgba(255,255,255,.1);
 }
 
+.back #engineer{
+    font-weight: 50em;
+}
 #progress{
     background: #333;
     /* display: flex;
@@ -63,9 +86,6 @@ a{
 }
 
 #logo {
-    width: 200px;
-    height: 150px;
-    background: #000;
     margin: 0 auto;
 }
 

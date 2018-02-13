@@ -1,4 +1,3 @@
-import anime from 'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js';
 var pathEls = document.querySelectorAll('path');
 for (var i = 0; i < pathEls.length; i++) {
   var pathEl = pathEls[i];
