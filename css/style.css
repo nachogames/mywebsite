@@ -1,0 +1,270 @@
+/* Fonts */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue_Thin.otf');
+    src: url('../fonts/BebasNeue_Thin.otf') format('OTF');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue_Light.otf');
+    src: url('../fonts/BebasNeue_Light.otf') format('OTF');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue_Book.otf');
+    src: url('../fonts/BebasNeue_Book.otf') format('OTF');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue_Regular.otf');
+    src: url('../fonts/BebasNeue_Regular.otf') format('OTF');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue_Bold.otf');
+    src: url('../fonts/BebasNeue_Bold.otf') format('OTF');
+    font-weight: 1000;
+    font-style: normal;
+}
+
+ 
+/* Basic */
+
+
+body {
+    font-family: 'Bebas Neue';
+    color: #000;
+}
+section, header, footer, main, article, nav, aside {
+    position: relative;
+}
+
+.wrapper{
+    margin: -8px;
+}
+
+a {
+    color: #ff455f;
+    outline: none !important;
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+a:hover, a:focus {
+    color: #0e1832;
+}
+p {
+    color: #4A5666;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+
+header{
+    background: #000;
+    height: 100vh;
+    color: #fff;
+
+}
+
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%); 
+    width: 30%;
+    /*position: absolute;
+    /* top: calc(50vh - 120px);
+    left: calc(50vw - 275px); */
+    /* width: 500px;
+    height: 300px; */
+}
+
+header h1{
+    margin-top: 0;
+}
+
+/* p {
+    color: #4A5666;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+
+body{
+    color: #fff;
+    text-align: center;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+ }
+
+header{
+    /* background-image: url('img/headshot2.png'); * /
+    background-color: #000;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* position: absolute; * /
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0, 20px;  * /
+}
+
+#about-me{
+    padding:0;
+    margin: 0;
+    background: #ffa500;
+    /* background-size: 500px 500px;
+    height: 100vh;* /
+}
+
+/* .back{
+    font-family: 'Bebas Neue';
+    text-align: justify;
+    font-size: calc(70vw /3);
+    text-justify: left;
+    color: rgba(255,255,255,.1);
+    z-index: -1;
+} * /
+
+#background-words{
+    /* width: 100%;
+    height: 100%; * /
+    z-index: -1;
+}
+
+#about-me #background-words {
+    /* color: rgba(46, 0, 145, 1); * /
+    color: rgba(255,255,255,.1);
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    text-align: right;
+    font-size: 554px;
+    line-height: 73%;
+    font-weight: 700;
+    opacity: 0.5;
+    z-index: 888888;
+    font-weight: 200;
+}
+#about-me #background-words span {
+    display: block;
+    letter-spacing: -0.04em;
+}
+
+#design{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: -100px 0 !important;
+}
+
+#engineer{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: -100px 0;
+    font-weight: 1000;
+}
+
+#execute{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: -100px 0;
+}
+
+/* .back #engineer{
+    font-weight: 50em;
+} * /
+#progress{
+    background: #333;
+    height: 100vh;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; * /
+}
+
+#about{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.anim{
+    position: relative;
+}
+
+.projects{
+    display: grid;
+    z-index: 10;
+    color: black;
+    background-color: white;
+    height: 80px;
+    box-shadow: #000;
+    border: #000 solid 1px;
+}
+
+
+
+#contact{
+    background: #28e6f0;
+}
+
+footer{
+    background:#000;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo {
+    width: 400px;
+    height: 400px;
+}
+
+
+.anim, .anim svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.anim path {
+    stroke-width: 2;
+} */
+
+
+
+/* Media Queries */
+
+/* @media only screen and (max-width: 1490px) {
+    .back{
+        font-size: 20em;
+    }
+} */
