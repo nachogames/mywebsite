@@ -57,33 +57,51 @@ table {
 /* ----------------------------------------------------- */
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Thin.otf') format('OTF');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Light.otf') format('OTF');
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueLight.woff') format('woff'),
+        url('BebasNeueLight.svg#BebasNeueLight') format('svg');
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Book.otf') format('OTF');
+    src: url('BebasNeueRegular.eot');
+    src: url('BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueRegular.woff') format('woff'),
+        url('BebasNeueRegular.svg#BebasNeueRegular') format('svg');
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
-    font-family: "Bebas Neue";
-    src: url('../fonts/BebasNeue_Regular.otf') format('OTF');
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue-Thin.eot');
+    src: url('BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeue-Thin.woff') format('woff'),
+        url('BebasNeue-Thin.svg#BebasNeue-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBold.eot');
+    src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBold.woff') format('woff'),
+        url('BebasNeueBold.svg#BebasNeueBold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Bebas Neue";
-    src: url('../fonts/BebasNeue_Bold.otf') format('OTF');
-    font-weight: 1000;
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBook.eot');
+    src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBook.woff') format('woff'),
+        url('BebasNeueBook.svg#BebasNeueBook') format('svg');
+    font-weight: 200;
     font-style: normal;
 }
 /* End of Fonts */
@@ -92,14 +110,16 @@ table {
 
 /* General Use CSS Stuff */
 /* ----------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Bebas Neue';
     font-weight: 700;
     color: #000;
-}
-
-.wrapper{
-    margin: -8px;
 }
 
 a {
@@ -113,13 +133,7 @@ a {
 a:hover, a:focus {
     color: #0e1832;
 }
-/* p {
-    color: #4A5666;
-    font-size: 20px;
-    line-height: 34px;
-    margin: 0 0 30px;
-    font-weight: 400;
-} */
+
 /* End of General CSS */
 /* ----------------------------------------------------- */
 
@@ -130,25 +144,6 @@ header{
     background: #000;
     height: 100vh;
     color: #fff;
-    /* position: relative; */
-
-}
-
-
-.title{
-    padding: 0;
-    margin: 2px;
-}
-
-#title-words{
-    position: relative;
-    text-align: center;
-    font-size: 3vw;
-    top: 55vh;
-}
-
-#title-words h1{
-    font-size: 150px;
 }
 
 #logo{
@@ -156,19 +151,28 @@ header{
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    /* padding: 0; */
     transform: translate(-50%, -50%); 
     width: 30%;
-    /*position: absolute;
-    /* top: calc(50vh - 120px);
-    left: calc(50vw - 275px); */
-    /* width: 500px;
-    height: 300px; */
 }
 
-header h1{
+.title{
+    padding: 0;
+    margin: 2px;
+    text-align: center;
+    font-size: 3vw;
+
+}
+
+.title h1{
+    font-size: 150px;
     margin-top: 0;
 }
+
+#title-words{
+    position: relative;
+    top: 55vh;
+}
+
 /* End of Title Page */
 /* ----------------------------------------------------- */
 
@@ -181,7 +185,7 @@ header h1{
     background-color: #FAAB18;
     margin: 0;
     padding: 0;
-    /* height: 100vh; */
+    position: relative;
     
 }
 
@@ -190,20 +194,45 @@ header h1{
     margin: 0;
     color: #fff;
     font-size: 9vw;
+    position: absolute;
+    top: 0;
+    left: 39%;
+
+
+}
+
+#about-me .aboutBackground .back{
+    font-size: 30vw;
+    display: block;
+    color:rgba(241, 195, 44, 0.5);
+    font-weight: 300;
+    line-height: 73%;
+}
+
+#about-me .aboutBackground #engineer{
+    font-weight: 700;
+    line-height: 60%;
+    margin-top: 3%;
+
+}
+
+/* #about-me .aboutBackground #execute{
+    padding-bottom: 20px;
+
+} */
+
+
+#about-me .info{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+#about-me .about{
     text-align: center;
 }
 
-
-#aboutBackground{
-    width: 90%;
-    margin-left: 0;
-    z-index: -1;
-}
-.about{
-    margin: 0 0;
-    padding: 0;
-    z-index: 111;
-}
 /* End of About page */
 /* ----------------------------------------------------- */
 
@@ -212,47 +241,44 @@ header h1{
 /* ----------------------------------------------------- */
 #progress{
     background-color: #222;
+    position: relative;
+}
+
+#progress .title{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #progress .prog{
-    text-align: center;
     color: #fff;
-    position: relative;
-}
-
-#progress h3 p{
     font-size: 1.5vw;
+    text-align: left;
 }
 
-#progress h1{
+
+#progress .prog h1{
     font-size: 8vw;
 }
 
-#progress .anim{ 
-    margin: 0 0;
-    padding: 0 0;
-    background-position: center;
-
-}
-
 #progress .projects{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+#progress .project{
     display: grid;
-    margin: 0 auto;
+    padding-top: 30px;
+    margin: 10px 0;
     color: #000;
-    background-color: #fff;
+    background-color: rgba(255,255,255,.85);
     border: #000 solid 1px;
-    width: 500px;
-    height: 80px;
-    text-align: center;
-    position: relative;
-    bottom: 400px;
-    
+    width: 30vw;
+    height: 10vh;
+    text-align: center;   
 }
 
-
-#project3{
-    z-index: 88888;
-}
 /* End of Progress Page */
 /* ----------------------------------------------------- */
 
