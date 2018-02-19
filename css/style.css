@@ -57,36 +57,31 @@ table {
 /* ----------------------------------------------------- */
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Thin.otf');
     src: url('../fonts/BebasNeue_Thin.otf') format('OTF');
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Light.otf');
     src: url('../fonts/BebasNeue_Light.otf') format('OTF');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Book.otf');
     src: url('../fonts/BebasNeue_Book.otf') format('OTF');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Regular.otf');
+    font-family: "Bebas Neue";
     src: url('../fonts/BebasNeue_Regular.otf') format('OTF');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url('../fonts/BebasNeue_Bold.otf');
+    font-family: "Bebas Neue";
     src: url('../fonts/BebasNeue_Bold.otf') format('OTF');
     font-weight: 1000;
     font-style: normal;
@@ -99,6 +94,7 @@ table {
 /* ----------------------------------------------------------------- */
 body {
     font-family: 'Bebas Neue';
+    font-weight: 700;
     color: #000;
 }
 
@@ -147,7 +143,7 @@ header{
 #title-words{
     position: relative;
     text-align: center;
-    font-size: 50px;
+    font-size: 3vw;
     top: 55vh;
 }
 
@@ -183,7 +179,6 @@ header h1{
 /* ----------------------------------------------------- */
 #about-me{
     background-color: #FAAB18;
-    text-align: center;
     margin: 0;
     padding: 0;
     /* height: 100vh; */
@@ -193,41 +188,21 @@ header h1{
 #about-me h1{
     padding: 0;
     margin: 0;
+    color: #fff;
+    font-size: 9vw;
+    text-align: center;
 }
 
-#am{
-    font-size: 100px;
-    display: inline;
-}
 
-#about-me #background-words{
-    /* position: absolute; */
-    color: rgba(247, 187, 59, .5);
-    text-align: left;
-    /* font-size: 554px; */
-    font-size: calc(70vw /3);
-    line-height: 73%;
-    z-index: 0;
-    top:0;
-    margin: 0,0;
-    padding: 0;
-}
-.back{
-    top: 0px;
-    margin:0;
-    padding:0;
-}
-
-#about-me #background-words span{
-    display: flex;
-    letter-spacing: -0.04em;
+#aboutBackground{
+    width: 90%;
+    margin-left: 0;
     z-index: -1;
 }
-
-
-#about{
-    position: relative;
-    bottom: 50vh;
+.about{
+    margin: 0 0;
+    padding: 0;
+    z-index: 111;
 }
 /* End of About page */
 /* ----------------------------------------------------- */
@@ -237,28 +212,46 @@ header h1{
 /* ----------------------------------------------------- */
 #progress{
     background-color: #222;
-    top:0;
-    left:0;
-    width:100%;
-    height:90%;
 }
 
-.anim{ 
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    margin: 0 auto;
-    position: relative;
-
-}
-
-.projects{
-    position: relative;
-    margin: 0 auto;
-    color: #fff;
+#progress .prog{
     text-align: center;
-    top: 100;
+    color: #fff;
+    position: relative;
+}
+
+#progress h3 p{
+    font-size: 1.5vw;
+}
+
+#progress h1{
+    font-size: 8vw;
+}
+
+#progress .anim{ 
+    margin: 0 0;
+    padding: 0 0;
+    background-position: center;
+
+}
+
+#progress .projects{
+    display: grid;
+    margin: 0 auto;
+    color: #000;
+    background-color: #fff;
+    border: #000 solid 1px;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    bottom: 400px;
     
+}
+
+
+#project3{
+    z-index: 88888;
 }
 /* End of Progress Page */
 /* ----------------------------------------------------- */
@@ -271,11 +264,22 @@ header h1{
 }
 
 #contact p{
-    font-size: 12vw;
-    text-align: center;
+    /* font-size: 12vw; */
+    text-align: left;
+    color: #fff;
     z-index: 100;
 }
 
+#contact .intro{
+    font-size: 8vw;
+    padding-left: 25px
+}
+
+#contact .email{
+    font-size: 14vw;
+    text-align: right;
+    padding-right: 80px;
+}
 /* End of Contact Page */
 /* ----------------------------------------------------- */
 
@@ -283,12 +287,12 @@ header h1{
 
 /* Footer */
 /* ----------------------------------------------------- */
-    footer{    
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        font-size: 3.5vw;
-    }
+footer{    
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 3.5vw;
+}
 
 /* End of Footer */
 /* ----------------------------------------------------- */
@@ -297,11 +301,29 @@ header h1{
 
 /* Media Queries */
 /* ----------------------------------------------------- */
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     header{
-        height: auto;
+        height: 300px;
     }
-} */
+    #logo{
+        top: 100px;
+        left: 10px;
+        margin-right: 0px;
+        /* padding: 0; */
+        transform: translate(0,0); 
+    }
+
+    #title-words{
+        position: relative;
+        text-align: center;
+        top: 100px;
+        left: 80px;
+    }
+
+    #title-words h1{
+        font-size: 8vw;
+    }
+}
 
 /* End of Media Queries */
 /* ----------------------------------------------------- */
