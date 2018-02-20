@@ -6,49 +6,6 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 /* End of CSS Reset */
 /* ----------------------------------------------------- */
 
@@ -57,50 +14,50 @@ table {
 /* ----------------------------------------------------- */
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeueLight.eot');
-    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeueLight.woff') format('woff'),
-        url('BebasNeueLight.svg#BebasNeueLight') format('svg');
+    src: url('../fonts/BebasNeueLight.eot');
+    src: url('../fonts/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueLight.woff') format('woff'),
+        url('../fonts/BebasNeueLight.svg#BebasNeueLight') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeueRegular.eot');
-    src: url('BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeueRegular.woff') format('woff'),
-        url('BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeue-Thin.eot');
-    src: url('BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeue-Thin.woff') format('woff'),
-        url('BebasNeue-Thin.svg#BebasNeue-Thin') format('svg');
+    src: url('../fonts/BebasNeue-Thin.eot');
+    src: url('../fonts/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue-Thin.woff') format('woff'),
+        url('../fonts/BebasNeue-Thin.svg#BebasNeue-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeueBold.eot');
-    src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeueBold.woff') format('woff'),
-        url('BebasNeueBold.svg#BebasNeueBold') format('svg');
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueBold.woff') format('woff'),
+        url('../fonts/BebasNeueBold.svg#BebasNeueBold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('BebasNeueBook.eot');
-    src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeueBook.woff') format('woff'),
-        url('BebasNeueBook.svg#BebasNeueBook') format('svg');
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueBook.woff') format('woff'),
+        url('../fonts/BebasNeueBook.svg#BebasNeueBook') format('svg');
     font-weight: 200;
     font-style: normal;
 }
@@ -113,26 +70,41 @@ table {
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
     box-sizing: border-box;
 }
+
+/* html{
+    display: table;
+    margin: auto;
+} */
 
 body {
     font-family: 'Bebas Neue';
     font-weight: 700;
     color: #000;
+    /* max-width: 2000px; */
+    background: #464646;
+    /* display: table-cell;
+    vertical-align: middle; */
 }
 
 a {
-    color: #ff455f;
+    color: #fff;
     outline: none !important;
     text-decoration: none !important;
     -webkit-transition: all 225ms ease;
     -moz-transition: all 225ms ease;
     transition: all 225ms ease;
 }
-a:hover, a:focus {
-    color: #0e1832;
-}
+
 
 /* End of General CSS */
 /* ----------------------------------------------------- */
@@ -141,12 +113,13 @@ a:hover, a:focus {
 /* Title Page */
 /* ----------------------------------------------------- */
 header{
+    position: relative;
     background: #000;
     height: 100vh;
     color: #fff;
 }
 
-#logo{
+header #logo{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -155,7 +128,7 @@ header{
     width: 30%;
 }
 
-.title{
+header .title{
     padding: 0;
     margin: 2px;
     text-align: center;
@@ -163,12 +136,12 @@ header{
 
 }
 
-.title h1{
+header .title h1{
     font-size: 150px;
     margin-top: 0;
 }
 
-#title-words{
+header #title-words{
     position: relative;
     top: 55vh;
 }
@@ -186,6 +159,8 @@ header{
     margin: 0;
     padding: 0;
     position: relative;
+    width: 100%;
+    height: 100%;
     
 }
 
@@ -194,19 +169,17 @@ header{
     margin: 0;
     color: #fff;
     font-size: 9vw;
-    position: absolute;
-    top: 0;
-    left: 39%;
-
-
+    text-align: center;
 }
+
 
 #about-me .aboutBackground .back{
     font-size: 30vw;
     display: block;
-    color:rgba(241, 195, 44, 0.5);
+    /* color:rgba(241, 195, 44, 0.5); */
+    color:rgba(255,255,255, 0.1);
     font-weight: 300;
-    line-height: 73%;
+    line-height: 85%;
 }
 
 #about-me .aboutBackground #engineer{
@@ -227,11 +200,101 @@ header{
     top: 25%;
     left: 25%;
     width: 50%;
+    font-size: 1.5vw;
 }
 
 #about-me .about{
     text-align: center;
 }
+
+
+    /* Skills Section */
+    /* ----------------------------------------------------- */
+    #about-me #skills{
+        background: rgba(150, 149, 149, 0.3);
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .skill-list li{
+        float: left;
+        width: 40%;
+        margin: 5%;
+        list-style-type: none;
+    }
+
+    .skill .container{
+        height: 5px;
+        width: 100%;
+        background-color: #8d8d8d;
+        margin: 50px 0;
+    }
+
+    .container .skl{
+        height: 5px;
+        width: 65%;
+        -webkit-box-shadow:
+            inset 0 0 1px #fff,
+            0px 0px 1px 1px rgba(250, 173, 8, 0.3);
+        -moz-box-shadow:
+            inset 0 0 1px #fff,
+            0px 0px 1px 1px rgba(250, 173, 8, 0.3);
+        box-shadow:
+            inset 0 0 1px #fff,
+            0px 0px 1px 1px rgba(250, 173, 8, 0.3);
+    }
+
+
+    .container #java{
+        background-color: #f3960a;
+        width: 70%;
+    }
+    .container #c{
+        background-color: #11d6ec;
+        width: 50%;
+        box-shadow: none;
+    }
+    .container #javascript{
+        background-color: #f3960a;
+        width: 50%;
+    }
+    .container #perl{
+        background-color: #11d6ec;
+        width: 30%;
+        box-shadow: none;
+    }
+    .container #html-css{
+        background-color: #f3960a;
+        width: 60%;
+    }
+    .container #photoshop{
+        background-color: #f3960a;
+        width: 65%;
+    }
+    .container #illustrator{
+        background-color: #11d6ec;
+        width: 45%;
+        box-shadow: none;
+    }
+    .container #after-effects{
+        background-color: #f3960a;
+        width: 30%;
+    }
+    .container #nx{
+        background-color: #11d6ec;
+        width: 45%;
+        box-shadow: none;
+    }
+    .container #blender{
+        background-color: #f3960a;
+        width: 45%;
+    }
+    /* End of Skills Section */
+    /* ----------------------------------------------------- */
+
 
 /* End of About page */
 /* ----------------------------------------------------- */
@@ -242,14 +305,23 @@ header{
 #progress{
     background-color: #222;
     position: relative;
+    width: 100%;
 }
 
 #progress .title{
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+#progress .title h1{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 9vw;
+    text-align: center;
+}
 #progress .prog{
     color: #fff;
     font-size: 1.5vw;
@@ -257,27 +329,31 @@ header{
 }
 
 
-#progress .prog h1{
-    font-size: 8vw;
-}
-
 #progress .projects{
     position: absolute;
     top: 10%;
     left: 30%;
 }
 
+/* #progress .projects{
+    position: relative;
+    top: -400px;
+    margin-bottom: -30vh;
+} */
+
 #progress .project{
     display: grid;
-    padding-top: 30px;
+    padding: 5px;
     margin: 10px 0;
     color: #000;
     background-color: rgba(255,255,255,.85);
     border: #000 solid 1px;
     width: 30vw;
-    height: 10vh;
-    text-align: center;   
+    height: 5vw;
+    text-align: center;  
+    font-size: 1.5vw; 
 }
+
 
 /* End of Progress Page */
 /* ----------------------------------------------------- */
@@ -287,24 +363,32 @@ header{
 /* ----------------------------------------------------- */
 #contact{
     background-color: #33C5F3;
+    position: relative;
 }
 
 #contact p{
-    /* font-size: 12vw; */
-    text-align: left;
     color: #fff;
-    z-index: 100;
 }
 
 #contact .intro{
-    font-size: 8vw;
-    padding-left: 25px
+    padding-left: 25px;
+    line-height: 90%;
+}
+
+#contact #lets{
+    font-size: 12vw;
+    padding-top: 20px;
+}
+
+#contact #just{
+    font-size: 7vw;
 }
 
 #contact .email{
-    font-size: 14vw;
+    font-size: 15vw;
     text-align: right;
-    padding-right: 80px;
+    padding-right: 5%;
+    line-height: 90%;
 }
 /* End of Contact Page */
 /* ----------------------------------------------------- */
@@ -313,11 +397,41 @@ header{
 
 /* Footer */
 /* ----------------------------------------------------- */
-footer{    
+footer{ 
+    padding: 5px 0;
+    position: relative;   
     background-color: #000;
     color: #fff;
     text-align: center;
     font-size: 3.5vw;
+
+}
+
+footer #github:hover{
+    color: #e5ad31;
+}
+
+footer #linkedin:hover{
+    color: #77c0f1;
+}
+
+footer p{
+    display: inline;
+    padding: 10px 0;
+}
+
+footer span{
+    padding: 0 .5%;
+}
+
+footer .smile{
+    padding: 0;
+    margin: 0;
+}
+
+footer .thanks{
+    padding-right: 0;
+    margin-right: 0;
 }
 
 /* End of Footer */
@@ -327,9 +441,33 @@ footer{
 
 /* Media Queries */
 /* ----------------------------------------------------- */
+/* @media only screen and (max-width: 1000px) {
+    header{
+        height: 60vh;
+    }
+    #logo{
+        top: 100px;
+        left: 10px;
+        margin-right: 0px;
+        /* padding: 0; * /
+        transform: translate(0,0); 
+    }
+
+    #title-words{
+        position: relative;
+        text-align: center;
+        top: 100px;
+        left: 80px;
+    }
+
+    #title-words h1{
+        font-size: 8vw;
+    }
+} */
+
 @media only screen and (max-width: 700px) {
     header{
-        height: 300px;
+        height: 30vh;
     }
     #logo{
         top: 100px;
@@ -351,186 +489,12 @@ footer{
     }
 }
 
+/* @media only screen and (max-width: 600px) {
+    #progress .project{
+        height: 40px;
+    }
+
+} */
+
 /* End of Media Queries */
 /* ----------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-/* p {
-    color: #4A5666;
-    font-size: 20px;
-    line-height: 34px;
-    margin: 0 0 30px;
-    font-weight: 400;
-}
-
-body{
-    color: #fff;
-    text-align: center;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
- }
-
-header{
-    /* background-image: url('img/headshot2.png'); * /
-    background-color: #000;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    /* position: absolute; * /
-    padding: 0;
-    margin: 0;
-    height:100vh;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0, 20px;  * /
-}
-
-#about-me{
-    padding:0;
-    margin: 0;
-    background: #ffa500;
-    /* background-size: 500px 500px;
-    height: 100vh;* /
-}
-
-/* .back{
-    font-family: 'Bebas Neue';
-    text-align: justify;
-    font-size: calc(70vw /3);
-    text-justify: left;
-    color: rgba(255,255,255,.1);
-    z-index: -1;
-} * /
-
-#background-words{
-    /* width: 100%;
-    height: 100%; * /
-    z-index: -1;
-}
-
-#about-me #background-words {
-    /* color: rgba(46, 0, 145, 1); * /
-    color: rgba(255,255,255,.1);
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    text-align: right;
-    font-size: 554px;
-    line-height: 73%;
-    font-weight: 700;
-    opacity: 0.5;
-    z-index: 888888;
-    font-weight: 200;
-}
-#about-me #background-words span {
-    display: block;
-    letter-spacing: -0.04em;
-}
-
-#design{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: -100px 0 !important;
-}
-
-#engineer{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: -100px 0;
-    font-weight: 1000;
-}
-
-#execute{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: -100px 0;
-}
-
-/* .back #engineer{
-    font-weight: 50em;
-} * /
-#progress{
-    background: #333;
-    height: 100vh;
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%; * /
-}
-
-#about{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.anim{
-    position: relative;
-}
-
-.projects{
-    display: grid;
-    z-index: 10;
-    color: black;
-    background-color: white;
-    height: 80px;
-    box-shadow: #000;
-    border: #000 solid 1px;
-}
-
-
-
-#contact{
-    background: #28e6f0;
-}
-
-footer{
-    background:#000;
-}
-
-a{
-    text-decoration: none;
-}
-
-#logo {
-    width: 400px;
-    height: 400px;
-}
-
-
-.anim, .anim svg {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.anim path {
-    stroke-width: 2;
-} */
-
-
-
-/* Media Queries */
-
-/* @media only screen and (max-width: 1490px) {
-    .back{
-        font-size: 20em;
-    }
-} */
