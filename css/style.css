@@ -863,7 +863,7 @@ span.thanks:hover ~ #mouth{
 @media only screen and (min-width: 3000px) {
     header #logo{
         position: relative;
-        top: 1400px;
+        top: 1000px;
         left: 50%;
         /* max-width: 50%;
         top: 50%;
@@ -875,7 +875,7 @@ span.thanks:hover ~ #mouth{
     
     header .hi{
         position: relative;
-        top: 500px;
+        top: 100px;
         left: 28%;
         font-size: 400px;
         font-weight: 700;
@@ -889,7 +889,7 @@ span.thanks:hover ~ #mouth{
   
     header .welcome{
         position: relative;
-        top: 750px;
+        top: 650px;
         margin: 0 auto;
         font-size: 80px;
     }
@@ -897,7 +897,7 @@ span.thanks:hover ~ #mouth{
     
     header .scroll{
         position: relative;
-        top: 750px;
+        top: 650px;
         font-size: 90px;
     }
 
